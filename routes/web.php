@@ -24,8 +24,9 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/home', function () {
-    return "halo";
+    return view('home');
 });
+
 
 Route::get('/latihan', [LatihanController::class, 'index']);
 Route::get('/beranda', [LatihanController::class, 'beranda']);
