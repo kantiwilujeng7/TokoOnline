@@ -11,16 +11,16 @@
                     <a class="nav-link active" aria-current="page" href="#">Produk</a>
                 </li> --}}
                 <li class="nav-item">
-                    <a class="nav-link" href=#produk>Produk</a>
+                    <a class="nav-link" href=#produk>Product</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#kategori">Kategori</a>
+                    <a class="nav-link" href="#kategori">Category</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Kontak</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tentang Kami</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
 
                 {{-- <li class="nav-item dropdown">

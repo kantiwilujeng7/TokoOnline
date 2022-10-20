@@ -2,7 +2,10 @@
 
 use App\Http\Controllers\LatihanController;
 use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Routing\Controller as RoutingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,8 +26,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('', function () {
+    return view('Homepage.index');
 });
 
 
@@ -35,3 +38,8 @@ Route::get('/', [HomepageController::class, 'index']);
 // Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/about', [HomepageController::class, 'about']);
+Route::get('/kontak', [HomepageController::class, 'kontak']);
+Route::get('/kategori', [HomepageController::class, 'kategori']);
+Route::get('/admin', [DashboardController::class, 'index']);
