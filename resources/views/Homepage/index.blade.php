@@ -71,7 +71,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+        </div> <br>
 
         {{-- CATEGORY PAGE --}}
 
@@ -84,53 +84,70 @@
             </div>
 
             {{-- <div class="row g-5"> --}}
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="asset/skcare.jpg" alt="Card image" style="width:100%">
+            <div class="card" style="width:18rem;">
+                <img class="card-img-top" src="asset/skincare.PNG" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title">Skin Care</h4>
+                    <h4 class="card-title"> Skin Care </h4>
                     <p class="card-text">Kami percaya bahwa kulit cantik bisa diraih oleh semua orang. Rangkaian
                         perawatan kulit kami berkualitas dengan hasil teruji, hadir untuk
                         semua jenis kulit dan beragam kebutuhan.
                     </p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+                    <a href="#" class="btn btn-primary">See More</a>
                 </div>
             </div>
 
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="asset/nail.jpg" alt="Card image" style="width:100%">
+            <div class="card" style="width:18rem;">
+                <img class="card-img-top" src="asset/bodycare.PNG" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title">Nail Polish</h4>
-                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer
+                    <h4 class="card-title"> Body Care </h4>
+                    <p class="card-text">Perawatan tubuh menyeluruh berarti merawat tubuh Anda dari ujung kepala hingga
+                        kaki. Kami menawarkan berbagai produk perawatan tubuh harian yang memainkan peranan penting sehingga
+                        Anda akan selalu merasa bersih, segar, sehat dan dimanjakan.
                     </p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+                    <a href="#" class="btn btn-primary">See More</a>
                 </div>
             </div>
 
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="asset/parfume.jpg" alt="Card image" style="width:100%">
+            <div class="card" style="width:18rem;">
+                <img class="card-img-top" src="asset/parfume.PNG" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title">Parfume</h4>
+                    <h4 class="card-title"> Parfume </h4>
                     <p class="card-text">Parfum atau wewangian dapat membangkitkan gairah, mengembalikan kenangan
                         indah atau membawa Anda ke tempat impian yang jauh. Anda dapat memilih berbagai macam
                         wewangian kami yang terinspirasi dari mimpi-mimpi indah.
                     </p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+                    <a href="#" class="btn btn-primary">See More</a>
                 </div>
             </div>
 
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="asset/makeup.jpg" alt="Card image" style="width:100%">
+            <div class="card" style="width:18rem;">
+                <img class="card-img-top" src="asset/haircare.PNG" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title">Make Up</h4>
+                    <h4 class="card-title"> Hair Care </h4>
+                    <p class="card-text">Ingin coba tren rambut terbaru atau butuh produk perawatan dan penataan rambut?
+                        Kami memiliki rangkaian produk perawatan dan penataan rambut yang lengkap, cobalah dan nikmati
+                        hasilnya sesuai dengan kebutuhan Anda.
+                    </p>
+                    <a href="#" class="btn btn-primary">See More</a>
+                </div>
+            </div>
+
+
+            <div class="card" style="width:18rem;">
+                <img class="card-img-top" src="asset/makeup.PNG" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title"> Make Up </h4>
                     <p class="card-text">Kami menawarkan pilihan terbaik dari tren kecantikan saat ini
                         lengkap dengan warna-warni yang sesuai dengan kepribadian Anda di setiap suasana.
                         Baik warna dasar klasik ataupun kombinasi warna yang menginspirasi.
                     </p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+                    <a href="#" class="btn btn-primary">See More</a>
                 </div>
             </div>
 
         </div>
+
+
 
 
 
