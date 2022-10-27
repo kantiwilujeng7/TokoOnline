@@ -19,59 +19,14 @@
     <!-- menunya kita taruh persis di bawah <body> -->
     @include('layouts.menu')
     {{-- @include('layouts.isi')
-    @include('layouts.kategori') --}}
+        @include('layouts.kategori') --}}
     <!-- di bawah menu baru kontennya -->
     <!-- Mulai sini kontennya depannya kasih @ sama yield-->
     @yield('content')
     <!-- Sampai sini -->
     @extends('layouts.template')
     @section('content')
-
-        {{-- PRODUCT PAGE --}}
-
-        <div id="produk" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="asset/slide1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="asset/slide2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="asset/slide3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> <br>
+        <br>
 
         {{-- CATEGORY PAGE --}}
 
@@ -79,77 +34,20 @@
             <div class="col col-md-12 col-sm-12 mb-4">
 
                 {{-- <div class="container mt-3"> --}}
-                <h2 class="text-center">KATEGORI PRODUK</h2> <br>
-                {{-- <p>Image at the top (card-img-top):</p> --}}
+                <h2 class="text-center mt-5">{{ $text }}</h1> <br>
+                    {{-- <p>Image at the top (card-img-top):</p> --}}
+                    <div class="container mt-2 text-center">
+                        <a href="{{ URL::to('mahasiswa/pendaftaran') }}" type="button"
+                            class="btn btn-primary">Pendaftaran</a>
+
+                        <a href="{{ URL::to('mahasiswa/ujian') }}" type="button" class="btn btn-primary">Ujian</a>
+
+                        <a href="{{ URL::to('mahasiswa/nilai') }}" type="button" class="btn btn-primary">Nilai</a>
+                    </div>
+
             </div>
-
-            {{-- <div class="row g-5"> --}}
-            <div class="card" style="width:18rem;">
-                <img class="card-img-top" src="asset/skincare.PNG" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title"> Skin Care </h4>
-                    <p class="card-text">Kami percaya bahwa kulit cantik bisa diraih oleh semua orang. Rangkaian
-                        perawatan kulit kami berkualitas dengan hasil teruji, hadir untuk
-                        semua jenis kulit dan beragam kebutuhan.
-                    </p>
-                    <a href="#" class="btn btn-primary">See More</a>
-                </div>
-            </div>
-
-            <div class="card" style="width:18rem;">
-                <img class="card-img-top" src="asset/bodycare.PNG" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title"> Body Care </h4>
-                    <p class="card-text">Perawatan tubuh menyeluruh berarti merawat tubuh Anda dari ujung kepala hingga
-                        kaki. Kami menawarkan berbagai produk perawatan tubuh harian yang memainkan peranan penting sehingga
-                        Anda akan selalu merasa bersih, segar, sehat dan dimanjakan.
-                    </p>
-                    <a href="#" class="btn btn-primary">See More</a>
-                </div>
-            </div>
-
-            <div class="card" style="width:18rem;">
-                <img class="card-img-top" src="asset/parfume.PNG" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title"> Parfume </h4>
-                    <p class="card-text">Parfum atau wewangian dapat membangkitkan gairah, mengembalikan kenangan
-                        indah atau membawa Anda ke tempat impian yang jauh. Anda dapat memilih berbagai macam
-                        wewangian kami yang terinspirasi dari mimpi-mimpi indah.
-                    </p>
-                    <a href="#" class="btn btn-primary">See More</a>
-                </div>
-            </div>
-
-            <div class="card" style="width:18rem;">
-                <img class="card-img-top" src="asset/haircare.PNG" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title"> Hair Care </h4>
-                    <p class="card-text">Ingin coba tren rambut terbaru atau butuh produk perawatan dan penataan rambut?
-                        Kami memiliki rangkaian produk perawatan dan penataan rambut yang lengkap, cobalah dan nikmati
-                        hasilnya sesuai dengan kebutuhan Anda.
-                    </p>
-                    <a href="#" class="btn btn-primary">See More</a>
-                </div>
-            </div>
-
-
-            <div class="card" style="width:18rem;">
-                <img class="card-img-top" src="asset/makeup.PNG" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title"> Make Up </h4>
-                    <p class="card-text">Kami menawarkan pilihan terbaik dari tren kecantikan saat ini
-                        lengkap dengan warna-warni yang sesuai dengan kepribadian Anda di setiap suasana.
-                        Baik warna dasar klasik ataupun kombinasi warna yang menginspirasi.
-                    </p>
-                    <a href="#" class="btn btn-primary">See More</a>
-                </div>
-            </div>
-
         </div>
-
-
-
-
+        </div>
 
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

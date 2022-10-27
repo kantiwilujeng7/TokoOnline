@@ -55,14 +55,34 @@ Route::prefix('admin')->group(function () {
 // });
 
 
+// Route::prefix('mahasiswa')->group(function () {
+//     Route::get('pendaftaran', function () {
+//         return "Halaman pendaftaran";
+//     })->name('pendaftaran');
+//     Route::get('ujian', function () {
+//         return "Halaman ujian";
+//     })->name('ujian');
+//     Route::get('nilai', function () {
+//         return "Halaman nilai";
+//     })->name('nilai');
+// });
+
 Route::prefix('mahasiswa')->group(function () {
     Route::get('pendaftaran', function () {
-        return "Halaman pendaftaran";
-    })->name('pendaftaran');
+        $title = 'Pendaftaran';
+        $text = 'Halaman Pendaftaran';
+        return view('mahasiswa.index', compact('title', 'text'));
+    });
+
     Route::get('ujian', function () {
-        return "Halaman ujian";
-    })->name('ujian');
+        $title = 'ujian';
+        $text = 'Halaman Ujian';
+        return view('mahasiswa.index', compact('title', 'text'));
+    });
+
     Route::get('nilai', function () {
-        return "Halaman nilai";
-    })->name('nilai');
+        $title = 'nilai';
+        $text = 'Halaman Nilai';
+        return view('mahasiswa.index', compact('title', 'text'));
+    });
 });
