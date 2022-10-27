@@ -16,7 +16,7 @@
                     <a class="nav-link" href="{{ URL::to('mahasiswa/ujian') }}"> Ujian </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ URL::to('mahasiswa/ujian') }}"> Nilai </a>
+                    <a class="nav-link" href="{{ URL::to('mahasiswa/nilai') }}"> Nilai </a>
                 </li>
 
                 {{-- <li class="nav-item dropdown">
