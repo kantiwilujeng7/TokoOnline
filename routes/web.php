@@ -43,3 +43,26 @@ Route::get('/about', [HomepageController::class, 'about']);
 Route::get('/kontak', [HomepageController::class, 'kontak']);
 Route::get('/kategori', [HomepageController::class, 'kategori']);
 Route::get('/admin', [DashboardController::class, 'index']);
+
+Route::prefix('admin')->group(function () {
+    Route::get('/', [DashboardController::class, 'index']);
+    Route::resource('kategori', KategoriController::class);
+});
+
+// Route::prefix('mahasiswa')->group(function () {
+//     Route::get('/', [DashboardController::class, 'index']);
+//     Route::resource('pendaftaran', KategoriController::class);
+// });
+
+
+Route::prefix('mahasiswa')->group(function () {
+    Route::get('pendaftaran', function () {
+        return "Halaman pendaftaran";
+    })->name('pendaftaran');
+    Route::get('ujian', function () {
+        return "Halaman ujian";
+    })->name('ujian');
+    Route::get('nilai', function () {
+        return "Halaman nilai";
+    })->name('nilai');
+});
