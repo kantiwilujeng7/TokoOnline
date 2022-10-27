@@ -70,19 +70,19 @@ Route::prefix('admin')->group(function () {
 Route::prefix('mahasiswa')->group(function () {
     Route::get('pendaftaran', function () {
         $title = 'Pendaftaran';
-        $text = 'Halaman Pendaftaran';
+        $text = ' Ini Halaman Pendaftaran';
         return view('mahasiswa.index', compact('title', 'text'));
     });
 
     Route::get('ujian', function () {
         $title = 'ujian';
-        $text = 'Halaman Ujian';
+        $text = 'Ini Halaman Ujian';
         return view('mahasiswa.index', compact('title', 'text'));
     });
 
     Route::get('nilai', function () {
         $title = 'nilai';
-        $text = 'Halaman Nilai';
+        $text = 'Ini Halaman Nilai';
         return view('mahasiswa.index', compact('title', 'text'));
     });
 });

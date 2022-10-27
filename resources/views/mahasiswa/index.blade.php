@@ -12,12 +12,13 @@
     </script>
     <title>{{ $title }}</title>
 
+
 </head>
 
 <body>
 
     <!-- menunya kita taruh persis di bawah <body> -->
-    @include('layouts.menu')
+    @include('layouts.menumhs')
     {{-- @include('layouts.isi')
         @include('layouts.kategori') --}}
     <!-- di bawah menu baru kontennya -->
@@ -34,16 +35,16 @@
             <div class="col col-md-12 col-sm-12 mb-4">
 
                 {{-- <div class="container mt-3"> --}}
-                <h2 class="text-center mt-5">{{ $text }}</h1> <br>
-                    {{-- <p>Image at the top (card-img-top):</p> --}}
-                    <div class="container mt-2 text-center">
+                <h2 class="text-center mt-5">{{ $text }}</h2> <br>
+                {{-- <p>Image at the top (card-img-top):</p> --}}
+                {{-- <div class="container mt-2 text-center">
                         <a href="{{ URL::to('mahasiswa/pendaftaran') }}" type="button"
-                            class="btn btn-primary">Pendaftaran</a>
+                            class="btn btn-primary"> Pendaftaran </a>
 
-                        <a href="{{ URL::to('mahasiswa/ujian') }}" type="button" class="btn btn-primary">Ujian</a>
+                        <a href="{{ URL::to('mahasiswa/ujian') }}" type="button" class="btn btn-primary"> Ujian </a>
 
-                        <a href="{{ URL::to('mahasiswa/nilai') }}" type="button" class="btn btn-primary">Nilai</a>
-                    </div>
+                        <a href="{{ URL::to('mahasiswa/nilai') }}" type="button" class="btn btn-primary"> Nilai </a>
+                    </div> --}}
 
             </div>
         </div>
