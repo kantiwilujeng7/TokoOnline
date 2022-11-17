@@ -51,19 +51,19 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading"> MENU </div>
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="{{ route('dashboard.admin') }}">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ route('kategori.index') }}">
                             <div class="sb-nav-link-icon"><i class="fas fa-boxes"></i></div>
-                            Produk
+                            Kategori
                         </a>
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ route('admin.transaksi') }}">
                             <div class="sb-nav-link-icon"><i class="fas fa-shopping-cart"></i></div>
                             Transaksi
                         </a>
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ route('admin.laporan') }}">
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Laporan
                         </a>

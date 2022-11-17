@@ -8,7 +8,14 @@ class KategoriController extends Controller
 {
     public function index()
     {
-        $data = array('title' => 'Kategori');
-        return view('Kategori.index', $data);
+        $data = array('title' => 'Kategori Produk');
+        return view('kategori.index', $data);
+    }
+
+
+    public function create()
+    {
+        $data = array('title' => 'Form Kategori');
+        return view('kategori.create', $data);
     }
 }

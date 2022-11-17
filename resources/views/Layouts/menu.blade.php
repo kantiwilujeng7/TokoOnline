@@ -17,10 +17,10 @@
                     <a class="nav-link" href="#kategori">Category</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="{{ URL::to('kontak') }}">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="{{ URL::to('about') }}">About</a>
                 </li>
 
                 {{-- <li class="nav-item dropdown">
