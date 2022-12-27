@@ -1,29 +1,15 @@
-{{-- @extends('layouts.dashboard')
-
+@extends('layout.dashboard')
 @section('content')
     <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <h1> Ini Dashboard Kategori </h1>
-
-            </div>
-        </div>
-    </div>
-@endsection --}}
-
-
-@extends('layouts.dashboard')
-@section('content')
-    <div class="container-fluid">
-        <!-- table kategori -->
+        <!-- table produk -->
         <div class="row">
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Kategori Produk</h4>
+                        <h4 class="card-title">Produk</h4>
                         <div class="card-tools">
-
-                            <a href="{{ route('create.kategori') }}" class="btn btn-sm btn-primary">
+                            <a href="{{ route('produk.index') }}" class="btn btn-sm btn-
+primary">
                                 Baru
                             </a>
                         </div>
@@ -32,11 +18,9 @@
                         <form action="#">
                             <div class="row">
                                 <div class="col">
-
                                     <input type="text" name="keyword" id="keyword" class="form-
 control"
                                         placeholder="ketik keyword disini">
-
                                 </div>
                                 <div class="col-auto">
                                     <button class="btn btn-primary">
@@ -63,7 +47,7 @@ control"
                                     <tr>
                                         <td>1</td>
                                         <td>
-                                            <img src="{{ asset('images/skincare.PNG') }}" alt="kategori 1" width='150px'>
+                                            <img src="{{ asset('asset/slide1.jpg') }}" alt="produk 1" width='150px'>
                                             <div class="row mt-2">
                                                 <div class="col">
                                                     <input type="file" name="gambar" id="gambar">
@@ -77,9 +61,15 @@ control"
                                         <td>Baju Anak</td>
                                         <td>12 Produk</td>
                                         <td>
-                                            {{-- <a href="{{ route('kategori.edit', 2) }}" --}}
-                                            <a href="#" class="btn btn-sm btn-primary mr-2 mb-2">
-                                                Edit
+                                            <a href="{{ route('show.produk', 2) }}"
+                                                class="btn btn-sm
+    btn-primary mr-2 mb-2">
+                                                <button class="btn btn-sm btn-primary">Detail</button>
+                                            </a>
+                                            <a href="{{ route('edit.produk', 2) }}"
+                                                class="btn btn-sm
+btn-primary mr-2 mb-2">
+                                                <button class="btn btn-sm btn-primary">Edit</button>
                                             </a>
                                             <button class="btn btn-sm btn-danger mb-2">
                                                 Hapus
@@ -89,8 +79,7 @@ control"
                                     <tr>
                                         <td>2</td>
                                         <td>
-                                            <img src="{{ asset('asset/image/gambar2.jpg') }}" alt="kategori 1"
-                                                width='150px'>
+                                            <img src="{{ asset('asset/slide1.jpg') }}" alt="produk 1" width='150px'>
                                             <div class="row mt-2">
                                                 <div class="col">
                                                     <input type="file" name="gambar" id="gambar">
@@ -104,9 +93,15 @@ control"
                                         <td>Baju Wanita</td>
                                         <td>20 Produk</td>
                                         <td>
-                                            <a href="#" class="btn btn-sm
-                btn-primary mr-2 mb-2">
-                                                Edit
+                                            <a href="{{ route('show.produk', 2) }}"
+                                                class="btn btn-sm
+btn-primary mr-2 mb-2">
+                                                <button class="btn btn-sm btn-primary">Detail</button>
+                                            </a>
+                                            <a href="{{ route('edit.produk', 2) }}"
+                                                class="btn btn-sm
+btn-primary mr-2 mb-2">
+                                                <button class="btn btn-sm btn-primary">Edit</button>
                                             </a>
                                             <button class="btn btn-sm btn-danger mb-2">
                                                 Hapus
@@ -116,8 +111,7 @@ control"
                                     <tr>
                                         <td>3</td>
                                         <td>
-                                            <img src="{{ asset('asset/image/gambar3.jpg') }}" alt="kategori 1"
-                                                width='150px'>
+                                            <img src="{{ asset('asset/slide1.jpg') }}" alt="produk 1" width='150px'>
                                             <div class="row mt-2">
                                                 <div class="col">
                                                     <input type="file" name="gambar" id="gambar">
@@ -131,9 +125,15 @@ control"
                                         <td>Baju Wanita</td>
                                         <td>20 Produk</td>
                                         <td>
-                                            <a href="#" class="btn btn-sm
-                btn-primary mr-2 mb-2">
-                                                Edit
+                                            <a href="{{ route('show.produk', 2) }}"
+                                                class="btn btn-sm
+    btn-primary mr-2 mb-2">
+                                                <button class="btn btn-sm btn-primary">Detail</button>
+                                            </a>
+                                            <a href="{{ route('edit.produk', 2) }}"
+                                                class="btn btn-sm
+    btn-primary mr-2 mb-2">
+                                                <button class="btn btn-sm btn-primary">Edit</button>
                                             </a>
                                             <button class="btn btn-sm btn-danger mb-2">
                                                 Hapus

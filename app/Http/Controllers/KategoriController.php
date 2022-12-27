@@ -18,4 +18,30 @@ class KategoriController extends Controller
         $data = array('title' => 'Form Kategori');
         return view('kategori.create', $data);
     }
+
+    public function store(Request $request)
+    {
+        //
+    }
+
+    public function show($id)
+    {
+        //
+    }
+
+    public function edit($id)
+    {
+        $data = array('title' => 'Form Edit Kategori');
+        return view('kategori.edit', $data);
+    }
+
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    public function destroy($id)
+    {
+        //
+    }
 }

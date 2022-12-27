@@ -1,4 +1,5 @@
 @extends('layouts.template')
+{{-- @include('layouts.menu') --}}
 @include('layouts.menu')
 @section('content')
     <div class="container">
@@ -8,3 +9,4 @@
             </div>
         </div>
     </div>
+@endsection

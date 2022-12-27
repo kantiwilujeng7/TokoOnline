@@ -42,9 +42,11 @@ Route::get('/', [HomepageController::class, 'index']);
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+// Route::get('/', 'HomepageController@index');
 Route::get('/about', [HomepageController::class, 'about']);
 Route::get('/kontak', [HomepageController::class, 'kontak']);
 Route::get('/kategori', [HomepageController::class, 'kategori']);
+// Route::get('/kategori/{slug}', 'HomepageController@produkperkategori');
 Route::get('/admin', [DashboardController::class, 'index']);
 
 // Route::prefix('admin')->group(function () {
@@ -52,32 +54,79 @@ Route::get('/admin', [DashboardController::class, 'index']);
 //     Route::resource('kategori', KategoriController::class);
 // });
 
-// --- ROUTE GROUP ADMIN ---
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', 'DashboardController@index');
+});
+
+// Route group admin
 Route::group(['prefix' => '/admin'], function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard.admin');
-    Route::get('/kategori', [KategoriController::class, 'index'])->name('admin.kategori');
 
-    /// --- ROUTE GROUP PARENT KATEGORI ---
-
+    //Route::group parent kategori
     Route::group(['prefix' => '/kategori'], function () {
         Route::get('/', [KategoriController::class, 'index'])->name('kategori.index');
         Route::get('/create', [KategoriController::class, 'create'])->name('create.kategori');
+        Route::get('/edit', [KategoriController::class, 'edit'])->name('edit.kategori');
+    });
+    //Route::group parent produk
+    Route::group(['prefix' => '/produk'], function () {
+        Route::get('/', [ProdukController::class, 'index'])->name('produk.index');
+        Route::get('/create', [ProdukController::class, 'create'])->name('create.produk');
+        Route::get('/show', [ProdukController::class, 'show'])->name('show.produk');
+        Route::get('/edit', [ProdukController::class, 'edit'])->name('edit.produk');
     });
 
+    //Route::group parent customer
+    Route::group(['prefix' => '/customer'], function () {
+        Route::get('/', [CustomerController::class, 'index'])->name('customer.index');
+        Route::get('/edit', [CustomerController::class, 'edit'])->name('customer.edit');
+    });
 
+    //Route::group parent transaksi
     Route::group(['prefix' => '/transaksi'], function () {
         Route::get('/', [TransaksiController::class, 'index'])->name('transaksi.index');
-        Route::get('/create', [TransaksiController::class, 'create'])->name('create.transaksi');
+        Route::get('/edit', [TransaksiController::class, 'edit'])->name('transaksi.edit');
+        Route::get('/show', [TransaksiController::class, 'show'])->name('transaksi.show');
     });
 
-    Route::group(['prefix' => '/laporan'], function () {
-        Route::get('/', [LaporanController::class, 'index'])->name('laporan.index');
-        Route::get('/create', [LaporanController::class, 'create'])->name('create.laporan');
+    //Route::group parent profil
+    Route::group(['prefix' => '/user'], function () {
+        Route::get('/', [UserController::class, 'index'])->name('user.index');
+        Route::get('/setting', [UserController::class, 'setting'])->name('user.setting');
     });
+
+
 
     Route::get('/transaksi', [TransaksiController::class, 'index'])->name('admin.transaksi');
     Route::get('/laporan', [LaporanController::class, 'index'])->name('admin.laporan');
 });
+
+// --- ROUTE GROUP ADMIN ---
+// Route::group(['prefix' => '/admin'], function () {
+//     Route::get('/', [DashboardController::class, 'index'])->name('dashboard.admin');
+//     Route::get('/kategori', [KategoriController::class, 'index'])->name('admin.kategori');
+
+//     /// --- ROUTE GROUP PARENT KATEGORI ---
+
+//     Route::group(['prefix' => '/kategori'], function () {
+//         Route::get('/', [KategoriController::class, 'index'])->name('kategori.index');
+//         Route::get('/create', [KategoriController::class, 'create'])->name('create.kategori');
+//     });
+
+
+//     Route::group(['prefix' => '/transaksi'], function () {
+//         Route::get('/', [TransaksiController::class, 'index'])->name('transaksi.index');
+//         Route::get('/create', [TransaksiController::class, 'create'])->name('create.transaksi');
+//     });
+
+//     Route::group(['prefix' => '/laporan'], function () {
+//         Route::get('/', [LaporanController::class, 'index'])->name('laporan.index');
+//         Route::get('/create', [LaporanController::class, 'create'])->name('create.laporan');
+//     });
+
+//     Route::get('/transaksi', [TransaksiController::class, 'index'])->name('admin.transaksi');
+//     Route::get('/laporan', [LaporanController::class, 'index'])->name('admin.laporan');
+// });
 
 
 // --- UTS ROUTE GROUP ---

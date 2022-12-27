@@ -14,7 +14,7 @@ class HomepageController extends Controller
 
     public function about()
     {
-        $data = array('title' => 'Halaman Tentang Kami');
+        $data = array('title' => 'Tentang Kami');
         return view('homepage.about', $data);
     }
 
@@ -26,7 +26,7 @@ class HomepageController extends Controller
 
     public function kategori()
     {
-        $data = array('title' => 'Halaman Kategori Produc');
+        $data = array('title' => 'Halaman Kategori Produk');
         return view('homepage.kategori', $data);
     }
 }

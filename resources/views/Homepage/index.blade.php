@@ -8,11 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-
-     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
-    <title>{{ $title }}</title>
-
+    {{-- <title>{{ $title }}</title> --}}
+    <title> Toko Online </title>
 </head>
 
 <body>
@@ -145,10 +144,223 @@
                     <a href="#" class="btn btn-primary">See More</a>
                 </div>
             </div>
-
+        </div>
         </div>
 
+        <!-- end Kategori Produk -->
 
+        <!-- produk Promo-->
+        <div class="row mt-4">
+            <div class="col col-md-12 col-sm-12 mb-4">
+                <h2 class="text-center">Promo</h2>
+            </div>
+            <!-- produk pertama -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{{ URL::to('produk/satu') }}">
+                        <img src="{{ asset('images/slide3.jpg') }}" alt="foto produk" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
+                            <p class="card-text">
+                                Produk Pertama
+                            </p>
+                        </a>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-light">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <p>
+                                    <del>Rp. 15.000,00</del>
+                                    <br />
+                                    Rp. 10.000,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- produk kedua -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{{ URL::to('produk/dua') }}">
+                        <img src="{{ asset('images/slide3.jpg') }}" alt="foto produk" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
+                            <p class="card-text">
+                                Produk Kedua
+                            </p>
+                        </a>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-light">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <p>
+                                    <del>Rp. 15.000,00</del>
+                                    <br />
+                                    Rp. 10.000,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- produk ketiga -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{{ URL::to('produk/tiga') }}">
+                        <img src="{{ asset('images/slide3.jpg') }}" alt="foto produk" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <a href="{{ URL::to('produk/tiga') }}" class="text-decoration-none">
+                            <p class="card-text">
+                                Produk Ketiga
+                            </p>
+                        </a>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-light">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <p>
+                                    <del>Rp. 15.000,00</del>
+                                    <br />
+                                    Rp. 10.000,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end produk promo -->
+
+        <!-- produk Terbaru-->
+        <div class="row mt-4">
+            <div class="col col-md-12 col-sm-12 mb-4">
+                <h2 class="text-center">Terbaru</h2>
+            </div>
+            <!-- produk pertama -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{{ URL::to('produk/satu') }}">
+                        <img src="{{ asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
+                            <p class="card-text">
+                                Produk Pertama
+                            </p>
+                        </a>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-light">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <p>
+                                    Rp. 10.000,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- produk kedua -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{{ URL::to('produk/dua') }}">
+                        <img src="{{ asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
+                            <p class="card-text">
+                                Produk Kedua
+                            </p>
+                        </a>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-light">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <p>
+                                    Rp. 10.000,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- produk ketiga -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{{ URL::to('produk/tiga') }}">
+                        <img src="{{ asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <a href="{{ URL::to('produk/tiga') }}" class="text-decoration-none">
+                            <p class="card-text">
+                                Produk Ketiga
+                            </p>
+                        </a>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-light">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <p>
+                                    Rp. 10.000,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end produk terbaru -->
+
+        <!-- tentang toko -->
+        <hr>
+        <div class="row mt-4">
+            <div class="col">
+                <h5 class="text-center">Toko Online Menggunakan Laravel</h5>
+                <p>
+                    Toko adalah demo membangun toko online menggunakan laravel framework. Di
+                    dalam demo ini terdapat user bisa menginput data kategori, produk dan transaksi.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laborum
+                    aliquam dolorum sequi nulla maiores quos incidunt veritatis numquam suscipit.
+                    Cumque dolore rem obcaecati. Eos quod ad non veritatis assumenda.
+                </p>
+                <p>
+                    Toko adalah demo membangun toko online menggunakan laravel framework. Di
+                    dalam demo ini terdapat user bisa menginput data kategori, produk dan transaksi.
+
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laborum
+                    aliquam dolorum sequi nulla maiores quos incidunt veritatis numquam suscipit.
+                    Cumque dolore rem obcaecati. Eos quod ad non veritatis assumenda.
+                </p>
+                <p class="text-center">
+                    <a href="" class="btn btn-outline-secondary">
+                        Baca Selengkapnya
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- end tentang toko -->
 
 
 
