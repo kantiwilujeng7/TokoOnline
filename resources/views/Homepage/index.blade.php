@@ -3,15 +3,51 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <!-- Font Awesome 4-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: rgb(200, 200, 200);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+
     {{-- <title>{{ $title }}</title> --}}
-    <title> Toko Online </title>
+    <title> Exotica Store </title>
+
+
 </head>
 
 <body>
@@ -29,7 +65,7 @@
 
         {{-- PRODUCT PAGE --}}
 
-        <div id="produk" class="carousel slide" data-bs-ride="carousel">
+        <div id="" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -42,22 +78,22 @@
                 <div class="carousel-item active">
                     <img src="asset/slide1.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5></h5>
+                        <p>Promo Desember</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="asset/slide2.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5></h5>
+                        <p>Promo Desember</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="asset/slide3.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5></h5>
+                        <p>Promo Desember</p>
                     </div>
                 </div>
             </div>
@@ -71,99 +107,126 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div> <br>
+        </div> <br> <br>
 
         {{-- CATEGORY PAGE --}}
 
-        <div class="row mt-4" id="kategori">
+        <div class="row mt-4; justify-content-center" id="kategori">
             <div class="col col-md-12 col-sm-12 mb-4">
-
-                {{-- <div class="container mt-3"> --}}
-                <h2 class="text-center">KATEGORI PRODUK</h2> <br>
-                {{-- <p>Image at the top (card-img-top):</p> --}}
+                <h2 class="text-center"> Kategori Produk </h2>
             </div>
 
-            {{-- <div class="row g-5"> --}}
-            <div class="card" style="width:18rem;">
-                <img class="card-img-top" src="asset/skincare.PNG" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title"> Skin Care </h4>
-                    <p class="card-text">Kami percaya bahwa kulit cantik bisa diraih oleh semua orang. Rangkaian
-                        perawatan kulit kami berkualitas dengan hasil teruji, hadir untuk
-                        semua jenis kulit dan beragam kebutuhan.
-                    </p>
-                    <a href="#" class="btn btn-primary">See More</a>
+            <div class="row mt-4" style="align-self: center">
+                <!-- produk pertama -->
+                <div class="col-md-3">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="{{ URL::to('produk/satu') }}">
+                            <img src="{{ asset('asset/skincare1.jpg') }}" alt="foto produk" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Skin Care
+                            </h4>
+                            <div class="col">
+                                <p class="card-text">
+                                    Kami percaya bahwa kulit cantik bisa diraih oleh semua orang. Rangkaian perawatan kulit
+                                    kami
+                                    berkualitas dengan hasil teruji, hadir untuk semua jenis kulit dan beragam kebutuhan.
+                                    Dapatkan kulit yang cerah dan
+                                    glowing sekarang juga!
+                                </p>
+                                <div class="col-auto">
+                                    <a href="#" class="btn btn-primary">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card" style="width:18rem;">
-                <img class="card-img-top" src="asset/bodycare.PNG" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title"> Body Care </h4>
-                    <p class="card-text">Perawatan tubuh menyeluruh berarti merawat tubuh Anda dari ujung kepala hingga
-                        kaki. Kami menawarkan berbagai produk perawatan tubuh harian yang memainkan peranan penting sehingga
-                        Anda akan selalu merasa bersih, segar, sehat dan dimanjakan.
-                    </p>
-                    <a href="#" class="btn btn-primary">See More</a>
+                <!-- produk kedua -->
+                <div class="col-md-3">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="{{ URL::to('produk/satu') }}">
+                            <img src="{{ asset('asset/bodycare4.PNG') }}" alt="foto produk" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Body Care
+                            </h4>
+                            <p class="card-text">
+                                Perawatan tubuh menyeluruh berarti merawat tubuh Anda dari ujung kepala hingga kaki. Kami
+                                menawarkan berbagai produk perawatan tubuh harian yang memainkan peranan penting sehingga
+                                anda akan selalu merasa bersih, segar, dan sehat.
+                            </p>
+                            <a href="#" class="btn btn-primary">See More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card" style="width:18rem;">
-                <img class="card-img-top" src="asset/parfume.PNG" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title"> Parfume </h4>
-                    <p class="card-text">Parfum atau wewangian dapat membangkitkan gairah, mengembalikan kenangan
-                        indah atau membawa Anda ke tempat impian yang jauh. Anda dapat memilih berbagai macam
-                        wewangian kami yang terinspirasi dari mimpi-mimpi indah.
-                    </p>
-                    <a href="#" class="btn btn-primary">See More</a>
+                <!-- produk ketiga -->
+                <div class="col-md-3">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="{{ URL::to('produk/satu') }}">
+                            <img src="{{ asset('asset/parfume.PNG') }}" alt="foto produk" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Parfume
+                            </h4>
+                            <p class="card-text">
+                                Parfum atau wewangian dapat membangkitkan gairah, mengembalikan kenangan indah atau membawa
+                                Anda
+                                ke tempat impian yang jauh. Anda dapat memilih berbagai macam wewangian kami yang
+                                terinspirasi
+                                dari mimpi-mimpi indah.
+                            </p>
+                            <a href="#" class="btn btn-primary">See More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="card" style="width:18rem;">
-                <img class="card-img-top" src="asset/haircare.PNG" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title"> Hair Care </h4>
-                    <p class="card-text">Ingin coba tren rambut terbaru atau butuh produk perawatan dan penataan rambut?
-                        Kami memiliki rangkaian produk perawatan dan penataan rambut yang lengkap, cobalah dan nikmati
-                        hasilnya sesuai dengan kebutuhan Anda.
-                    </p>
-                    <a href="#" class="btn btn-primary">See More</a>
+                <!-- produk ketiga -->
+                <div class="col-md-3">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="{{ URL::to('produk/satu') }}">
+                            <img src="{{ asset('asset/makeup.PNG') }}" alt="foto produk" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Make Up
+                            </h4>
+                            <p class="card-text">
+                                Kami menawarkan pilihan terbaik dari tren kecantikan saat ini lengkap dengan warna-warni
+                                yang
+                                sesuai dengan kepribadian Anda di setiap suasana. Baik warna dasar klasik ataupun kombinasi
+                                warna yang menginspirasi.
+                            </p>
+                            <a href="#" class="btn btn-primary">See More</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="card" style="width:18rem;">
-                <img class="card-img-top" src="asset/makeup.PNG" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title"> Make Up </h4>
-                    <p class="card-text">Kami menawarkan pilihan terbaik dari tren kecantikan saat ini
-                        lengkap dengan warna-warni yang sesuai dengan kepribadian Anda di setiap suasana.
-                        Baik warna dasar klasik ataupun kombinasi warna yang menginspirasi.
-                    </p>
-                    <a href="#" class="btn btn-primary">See More</a>
-                </div>
             </div>
         </div>
-        </div>
 
-        <!-- end Kategori Produk -->
+        <!-- end katalog -->
 
         <!-- produk Promo-->
-        <div class="row mt-4">
+        <div class="row mt-4; justify-content-center" id="promo">
             <div class="col col-md-12 col-sm-12 mb-4">
-                <h2 class="text-center">Promo</h2>
+                <h2 class="text-center"> Promo </h2>
             </div>
             <!-- produk pertama -->
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <div class="card mb-4 shadow-sm">
-                    <a href="{{ URL::to('produk/satu') }}">
-                        <img src="{{ asset('images/slide3.jpg') }}" alt="foto produk" class="card-img-top">
+                    <a href="{{ URL::to('produk/dua') }}">
+                        <img src="{{ asset('asset/bodycare2.jpg') }}" alt="Promo Body Care" class="card-img-top">
                     </a>
                     <div class="card-body">
-                        <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
+                        <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
                             <p class="card-text">
-                                Produk Pertama
+                                Promo Body Care
                             </p>
                         </a>
                         <div class="row mt-4">
@@ -184,15 +247,15 @@
                 </div>
             </div>
             <!-- produk kedua -->
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <div class="card mb-4 shadow-sm">
                     <a href="{{ URL::to('produk/dua') }}">
-                        <img src="{{ asset('images/slide3.jpg') }}" alt="foto produk" class="card-img-top">
+                        <img src="{{ asset('asset/kutek.jpg') }}" alt="Promo Nail Polish" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
                             <p class="card-text">
-                                Produk Kedua
+                                Promo Kutek
                             </p>
                         </a>
                         <div class="row mt-4">
@@ -213,15 +276,15 @@
                 </div>
             </div>
             <!-- produk ketiga -->
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <div class="card mb-4 shadow-sm">
                     <a href="{{ URL::to('produk/tiga') }}">
-                        <img src="{{ asset('images/slide3.jpg') }}" alt="foto produk" class="card-img-top">
+                        <img src="{{ asset('asset/skincare.PNG') }}" alt="Promo Make Up" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <a href="{{ URL::to('produk/tiga') }}" class="text-decoration-none">
                             <p class="card-text">
-                                Produk Ketiga
+                                Promo Skin Care
                             </p>
                         </a>
                         <div class="row mt-4">
@@ -241,24 +304,84 @@
                     </div>
                 </div>
             </div>
+            <!-- produk keempat -->
+            <div class="col-md-2">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{{ URL::to('produk/dua') }}">
+                        <img src="{{ asset('asset/makeup3.jpg') }}" alt="Promo Nail Polish" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
+                            <p class="card-text">
+                                Promo Make Up
+                            </p>
+                        </a>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-light">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <p>
+                                    <del>Rp. 15.000,00</del>
+                                    <br />
+                                    Rp. 10.000,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- produk keempat -->
+            <div class="col-md-2">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{{ URL::to('produk/dua') }}">
+                        <img src="{{ asset('asset/makeup4.jpg') }}" alt="Promo Nail Polish" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
+                            <p class="card-text">
+                                Promo Make Up
+                            </p>
+                        </a>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-light">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <p>
+                                    <del>Rp. 15.000,00</del>
+                                    <br />
+                                    Rp. 10.000,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
         <!-- end produk promo -->
 
-        <!-- produk Terbaru-->
-        <div class="row mt-4">
-            <div class="col col-md-12 col-sm-12 mb-4">
-                <h2 class="text-center">Terbaru</h2>
-            </div>
+        <!-- produk Promo 2-->
+        <div class="row mt-4; justify-content-center">
+            {{-- <div class="col col-md-12 col-sm-12 mb-4">
+                <h2 class="text-center"> Promo </h2>
+            </div> --}}
             <!-- produk pertama -->
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <div class="card mb-4 shadow-sm">
-                    <a href="{{ URL::to('produk/satu') }}">
-                        <img src="{{ asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+                    <a href="{{ URL::to('produk/dua') }}">
+                        <img src="{{ asset('asset/skincare2.jpg') }}" alt="Promo Skin Care" class="card-img-top">
                     </a>
                     <div class="card-body">
-                        <a href="{{ URL::to('produk/satu') }}" class="text-decoration-none">
+                        <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
                             <p class="card-text">
-                                Produk Pertama
+                                Promo Skin Care
                             </p>
                         </a>
                         <div class="row mt-4">
@@ -269,6 +392,8 @@
                             </div>
                             <div class="col-auto">
                                 <p>
+                                    <del>Rp. 15.000,00</del>
+                                    <br />
                                     Rp. 10.000,00
                                 </p>
                             </div>
@@ -277,15 +402,15 @@
                 </div>
             </div>
             <!-- produk kedua -->
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <div class="card mb-4 shadow-sm">
                     <a href="{{ URL::to('produk/dua') }}">
-                        <img src="{{ asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+                        <img src="{{ asset('asset/skincare3.jpg') }}" alt="Promo Nail Polish" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
                             <p class="card-text">
-                                Produk Kedua
+                                Promo Skin Care
                             </p>
                         </a>
                         <div class="row mt-4">
@@ -296,6 +421,8 @@
                             </div>
                             <div class="col-auto">
                                 <p>
+                                    <del>Rp. 15.000,00</del>
+                                    <br />
                                     Rp. 10.000,00
                                 </p>
                             </div>
@@ -304,15 +431,15 @@
                 </div>
             </div>
             <!-- produk ketiga -->
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <div class="card mb-4 shadow-sm">
                     <a href="{{ URL::to('produk/tiga') }}">
-                        <img src="{{ asset('images/slide2.jpg') }}" alt="foto produk" class="card-img-top">
+                        <img src="{{ asset('asset/skincare4.jpg') }}" alt="Promo Make Up" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <a href="{{ URL::to('produk/tiga') }}" class="text-decoration-none">
                             <p class="card-text">
-                                Produk Ketiga
+                                Promo Skin Care
                             </p>
                         </a>
                         <div class="row mt-4">
@@ -323,6 +450,8 @@
                             </div>
                             <div class="col-auto">
                                 <p>
+                                    <del>Rp. 15.000,00</del>
+                                    <br />
                                     Rp. 10.000,00
                                 </p>
                             </div>
@@ -330,29 +459,85 @@
                     </div>
                 </div>
             </div>
+            <!-- produk keempat -->
+            <div class="col-md-2">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{{ URL::to('produk/dua') }}">
+                        <img src="{{ asset('asset/makeup6.jpg') }}" alt="Promo Nail Polish" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
+                            <p class="card-text">
+                                Promo Make Up
+                            </p>
+                        </a>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-light">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <p>
+                                    <del>Rp. 15.000,00</del>
+                                    <br />
+                                    Rp. 10.000,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- produk keempat -->
+            <div class="col-md-2">
+                <div class="card mb-4 shadow-sm">
+                    <a href="{{ URL::to('produk/dua') }}">
+                        <img src="{{ asset('asset/bodycare3.jpg') }}" alt="Promo Body Care" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <a href="{{ URL::to('produk/dua') }}" class="text-decoration-none">
+                            <p class="card-text">
+                                Promo Body Care
+                            </p>
+                        </a>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button class="btn btn-light">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="col-auto">
+                                <p>
+                                    <del>Rp. 15.000,00</del>
+                                    <br />
+                                    Rp. 10.000,00
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-        <!-- end produk terbaru -->
+        <!-- end produk promo 2 -->
+
 
         <!-- tentang toko -->
         <hr>
-        <div class="row mt-4">
+        <div class="row mt-4; justify-content-center" id="tentang">
             <div class="col">
-                <h5 class="text-center">Toko Online Menggunakan Laravel</h5>
-                <p>
-                    Toko adalah demo membangun toko online menggunakan laravel framework. Di
-                    dalam demo ini terdapat user bisa menginput data kategori, produk dan transaksi.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laborum
-                    aliquam dolorum sequi nulla maiores quos incidunt veritatis numquam suscipit.
-                    Cumque dolore rem obcaecati. Eos quod ad non veritatis assumenda.
+                <h5 class="text-center"> Tentang Kami </h5>
+                <p class="text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laborum aliquam dolorum sequi nulla
+                    maiores quos incidunt veritatis numquam suscipit. Cumque dolore rem obcaecati. Eos quod ad non veritatis
+                    assumenda. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laborum aliquam dolorum sequi
+                    nulla maiores quos incidunt veritatis numquam suscipit. Cumque dolore rem obcaecati. Eos quod ad non
+                    veritatis
+                    assumenda.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laborum aliquam dolorum sequi
+                    nulla maiores quos incidunt veritatis numquam suscipit. Cumque dolore rem obcaecati.
                 </p>
-                <p>
-                    Toko adalah demo membangun toko online menggunakan laravel framework. Di
-                    dalam demo ini terdapat user bisa menginput data kategori, produk dan transaksi.
 
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laborum
-                    aliquam dolorum sequi nulla maiores quos incidunt veritatis numquam suscipit.
-                    Cumque dolore rem obcaecati. Eos quod ad non veritatis assumenda.
-                </p>
                 <p class="text-center">
                     <a href="" class="btn btn-outline-secondary">
                         Baca Selengkapnya
@@ -362,8 +547,25 @@
         </div>
         <!-- end tentang toko -->
 
+        <!-- kontak toko -->
 
+        <hr>
+        <div id="kontak">
+            <h5 class="text-center"> Kontak </h5>
+            <p class="text-center">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </p>
 
+        </div>
+        <!-- end kontak toko -->
+
+        <footer>
+            <p> Copyright @2022 Exotica Cosmetics Store. All rights reserved<br>
+                <a href="#produk">Exotica Store</a>
+            </p>
+        </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
             integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
