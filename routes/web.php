@@ -3,12 +3,14 @@
 use App\Http\Controllers\LatihanController;
 use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DosenController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\LaporanController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller as RoutingController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,7 +48,8 @@ Route::get('/', [HomepageController::class, 'index']);
 Route::get('/about', [HomepageController::class, 'about']);
 Route::get('/kontak', [HomepageController::class, 'kontak']);
 Route::get('/kategori', [HomepageController::class, 'kategori']);
-// Route::get('/kategori/{slug}', 'HomepageController@produkperkategori');
+Route::get('/kategori/{slug}', [HomepageController::class, 'kategori.index']);
+Route::get('/produk/{slug}', [HomepageController::class, 'produkdetail']);
 Route::get('/admin', [DashboardController::class, 'index']);
 
 // Route::prefix('admin')->group(function () {
@@ -128,6 +131,40 @@ Route::group(['prefix' => '/admin'], function () {
 //     Route::get('/laporan', [LaporanController::class, 'index'])->name('admin.laporan');
 // });
 
+
+// UAS 5 JANUARI 2023
+
+// Route::prefix('dosen')->group(function () {
+//     Route::get('/', [DashboardController::class, 'index']);
+
+//     // Route::resource('pendaftaran', KategoriController::class);
+// });
+
+Route::group(['prefix' => '/dosen'], function () {
+    Route::get('/', [DosenController::class, 'index'])->name('dosen.index');
+    // Route::get('/create', [ProdukController::class, 'create'])->name('create.produk');
+    // Route::get('/show', [ProdukController::class, 'show'])->name('show.produk');
+    // Route::get('/edit', [ProdukController::class, 'edit'])->name('edit.produk');
+});
+
+Route::group(['prefix' => '/produk'], function () {
+    Route::get('/', [ProdukController::class, 'index'])->name('produk.index');
+    Route::get('/create', [ProdukController::class, 'create'])->name('create.produk');
+    Route::get('/show', [ProdukController::class, 'show'])->name('show.produk');
+    Route::get('/edit', [ProdukController::class, 'edit'])->name('edit.produk');
+});
+
+// Route::prefix('mahasiswa')->group(function () {
+//     Route::get('pendaftaran', function () {
+//         return "Halaman pendaftaran";
+//     })->name('pendaftaran');
+//     Route::get('ujian', function () {
+//         return "Halaman ujian";
+//     })->name('ujian');
+//     Route::get('nilai', function () {
+//         return "Halaman nilai";
+//     })->name('nilai');
+// });
 
 // --- UTS ROUTE GROUP ---
 

@@ -61,9 +61,17 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                             Laporan
                         </a>
+                        <a class="nav-link" href="{{ route('user.index') }}">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            User
+                        </a>
                         <a class="nav-link" href="#">
                             <div class="sb-nav-link-icon"><i class="fas fa-sign-out"></i></div>
                             Logout
+                        </a>
+                        <a class="nav-link" href="{{ route('dosen.index') }}">
+                            <div class="sb-nav-link-icon"><i class="fas fa-boxes"></i></div>
+                            Dosen
                         </a>
 
                     </div>

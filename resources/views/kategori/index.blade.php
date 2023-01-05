@@ -63,89 +63,84 @@ control"
                                     <tr>
                                         <td>1</td>
                                         <td>
-                                            <img src="{{ asset('images/skincare.PNG') }}" alt="kategori 1" width='150px'>
+                                            <img src="{{ asset('asset/bodycare2.jpg') }}" alt="kategori 1" width='150px'>
                                             <div class="row mt-2">
                                                 <div class="col">
                                                     <input type="file" name="gambar" id="gambar">
-                                                </div>
-                                                <div class="col-auto">
                                                     <button class="btn btn-sm btn-primary">Upload</button>
                                                 </div>
                                             </div>
-                                        </td>
-                                        <td>KATE-1</td>
-                                        <td>Baju Anak</td>
-                                        <td>12 Produk</td>
-                                        <td>
-                                            {{-- <a href="{{ route('kategori.edit', 2) }}" --}}
-                                            <a href="#" class="btn btn-sm btn-primary mr-2 mb-2">
-                                                Edit
-                                            </a>
-                                            <button class="btn btn-sm btn-danger mb-2">
-                                                Hapus
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>
-                                            <img src="{{ asset('asset/image/gambar2.jpg') }}" alt="kategori 1"
-                                                width='150px'>
-                                            <div class="row mt-2">
-                                                <div class="col">
-                                                    <input type="file" name="gambar" id="gambar">
-                                                </div>
-                                                <div class="col-auto">
-                                                    <button class="btn btn-sm btn-primary">Upload</button>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>KATE-2</td>
-                                        <td>Baju Wanita</td>
-                                        <td>20 Produk</td>
-                                        <td>
-                                            <a href="#" class="btn btn-sm
-                btn-primary mr-2 mb-2">
-                                                Edit
-                                            </a>
-                                            <button class="btn btn-sm btn-danger mb-2">
-                                                Hapus
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>
-                                            <img src="{{ asset('asset/image/gambar3.jpg') }}" alt="kategori 1"
-                                                width='150px'>
-                                            <div class="row mt-2">
-                                                <div class="col">
-                                                    <input type="file" name="gambar" id="gambar">
-                                                </div>
-                                                <div class="col-auto">
-                                                    <button class="btn btn-sm btn-primary">Upload</button>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>KATE-3</td>
-                                        <td>Baju Wanita</td>
-                                        <td>20 Produk</td>
-                                        <td>
-                                            <a href="#" class="btn btn-sm
-                btn-primary mr-2 mb-2">
-                                                Edit
-                                            </a>
-                                            <button class="btn btn-sm btn-danger mb-2">
-                                                Hapus
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
+                        </td>
+                        <td>BC0001</td>
+                        <td>Body Care Love Nature Aloe Vera</td>
+                        <td>21 Produk</td>
+                        <td>
+                            {{-- <a href="{{ route('kategori.edit', 2) }}" --}}
+                            <a href="#" class="btn btn-sm btn-primary mr-2 mb-2">
+                                Edit
+                            </a>
+                            <button class="btn btn-sm btn-danger mb-2">
+                                Hapus
+                            </button>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <img src="{{ asset('asset/kutek.jpg') }}" alt="kategori 2" width='150px'>
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <input type="file" name="gambar" id="gambar">
+                                        <button class="btn btn-sm btn-primary">Upload</button>
+                                    </div>
+                                </div>
                     </div>
+                    </td>
+                    <td>NP0001</td>
+                    <td>Glossy Nail Polish "Hot Edition"</td>
+                    <td>10 Produk</td>
+                    <td>
+                        <a href="#" class="btn btn-sm
+                btn-primary mr-2 mb-2">
+                            Edit
+                        </a>
+                        <button class="btn btn-sm btn-danger mb-2">
+                            Hapus
+                        </button>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <img src="{{ asset('asset/makeup5.jpg') }}" alt="kategori 3" width='150px'>
+                            <div class="row mt-2">
+                                <div class="col">
+                                    <input type="file" name="gambar" id="gambar">
+                                    <button class="btn btn-sm btn-primary">Upload</button>
+                                </div>
+                            </div>
                 </div>
+                </td>
+                <td>SC0001</td>
+                <td>The One Matte Lipstick</td>
+                <td>15 Produk</td>
+                <td>
+                    <a href="#" class="btn btn-sm
+                btn-primary mr-2 mb-2">
+                        Edit
+                    </a>
+                    <button class="btn btn-sm btn-danger mb-2">
+                        Hapus
+                    </button>
+                </td>
+                </tr>
+                </tbody>
+                </table>
             </div>
         </div>
+    </div>
+    </div>
+    </div>
     </div>
 @endsection

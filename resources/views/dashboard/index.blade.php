@@ -1,17 +1,4 @@
 {{-- @extends('layouts.dashboard')
-
-@section('content')
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <h1> Ini Dashboard </h1>
-
-            </div>
-        </div>
-    </div>
-@endsection --}}
-
-{{-- @extends('layouts.dashboard')
 @section('content')
     <div class="container-fluid">
         <div class="row">
@@ -24,10 +11,7 @@
                     <div class="icon">
                         <i class="ion ion-bag"></i>
                     </div>
-
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-
-circle-right"></i></a>
-
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
@@ -39,10 +23,7 @@ circle-right"></i></a>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>
                     </div>
-
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-
-circle-right"></i></a>
-
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
@@ -54,10 +35,7 @@ circle-right"></i></a>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
                     </div>
-
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-
-    circle-right"></i></a>
-
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
@@ -69,10 +47,7 @@ circle-right"></i></a>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
                     </div>
-
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-
-    circle-right"></i></a>
-
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
             </div>
         </div>
@@ -99,7 +74,6 @@ circle-right"></i></a>
                                     <th>Qty</th>
                                     <th>Harga</th>
                                 </tr>
-
                             </thead>
                             <tbody>
                                 <tr>
@@ -135,7 +109,6 @@ circle-right"></i></a>
     </div>
 @endsection --}}
 
-
 @extends('layouts.dashboard')
 @section('content')
     <div class="container-fluid">
@@ -149,7 +122,7 @@ circle-right"></i></a>
                     <div class="icon">
                         <i class="ion ion-bag"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow circle-right"></i></a>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
@@ -161,7 +134,7 @@ circle-right"></i></a>
                     <div class="icon">
                         <i class="ion ion-pie-graph"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow circle-right"></i></a>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
@@ -173,7 +146,8 @@ circle-right"></i></a>
                     <div class="icon">
                         <i class="ion ion-person-add"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow circle-right"></i></a>
                 </div>
             </div>
             <div class="col-6 col-lg-3">
@@ -185,7 +159,7 @@ circle-right"></i></a>
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                    <a href="#" class="small-box-footer">More info <i class="fas fa-arrow circle-right"></i></a>
                 </div>
             </div>
         </div>
@@ -212,6 +186,7 @@ circle-right"></i></a>
                                     <th>Qty</th>
                                     <th>Harga</th>
                                 </tr>
+
                             </thead>
                             <tbody>
                                 <tr>

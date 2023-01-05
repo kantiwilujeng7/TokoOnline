@@ -5,19 +5,15 @@
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">
-                            Data Customer
-                        </h3>
+                        <h3 class="card-title"> Data Customer </h3>
                     </div>
                     <div class="card-body">
                         <form action="#">
                             <div class="row">
                                 <div class="col">
 
-                                    <input type="text" name="keyword" id="keyword" class="form-
-control"
+                                    <input type="text" name="keyword" id="keyword" class="form-control"
                                         placeholder="ketik keyword disini">
-
                                 </div>
                                 <div class="col-auto">
                                     <button class="btn btn-primary">
@@ -55,8 +51,7 @@ control"
                                         </td>
                                         <td>
                                             <a href="{{ route('customer.edit', 1) }}"
-                                                class="btn btn-sm
-        btn-primary">Edit</a>
+                                                class="btn btn-sm btn-primary">Edit</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -72,8 +67,7 @@ control"
                                         </td>
                                         <td>
                                             <a href="{{ route('customer.edit', 2) }}"
-                                                class="btn btn-sm
-        btn-primary">Edit</a>
+                                                class="btn btn-sm btn-primary">Edit</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -89,8 +83,7 @@ control"
                                         </td>
                                         <td>
                                             <a href="{{ route('customer.edit', 3) }}"
-                                                class="btn btn-sm
-btn-primary">Edit</a>
+                                                class="btn btn-sm btn-primary">Edit</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -106,8 +99,7 @@ btn-primary">Edit</a>
                                         </td>
                                         <td>
                                             <a href="{{ route('customer.edit', 4) }}"
-                                                class="btn btn-sm
-btn-primary">Edit</a>
+                                                class="btn btn-sm btn-primary">Edit</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -123,8 +115,7 @@ btn-primary">Edit</a>
                                         </td>
                                         <td>
                                             <a href="{{ route('customer.edit', 5) }}"
-                                                class="btn btn-sm
-btn-primary">Edit</a>
+                                                class="btn btn-sm btn-primary">Edit</a>
                                         </td>
                                     </tr>
                                 </tbody>
