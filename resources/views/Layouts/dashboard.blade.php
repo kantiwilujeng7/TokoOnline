@@ -69,10 +69,10 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-sign-out"></i></div>
                             Logout
                         </a>
-                        <a class="nav-link" href="{{ route('dosen.index') }}">
+                        {{-- <a class="nav-link" href="{{ route('dosen.index') }}">
                             <div class="sb-nav-link-icon"><i class="fas fa-boxes"></i></div>
                             Dosen
-                        </a>
+                        </a> --}}
 
                     </div>
                 </div>

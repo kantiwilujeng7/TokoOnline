@@ -134,25 +134,26 @@ Route::group(['prefix' => '/admin'], function () {
 
 // UAS 5 JANUARI 2023
 
-// Route::prefix('dosen')->group(function () {
-//     Route::get('/', [DashboardController::class, 'index']);
-
-//     // Route::resource('pendaftaran', KategoriController::class);
+// Route::get('/dosen', function () {
+//     return view('dosen/index');
+// });
+// Route::group(['prefix' => '/dosen', 'as' => 'dosen.'], function () {
+//     Route::get('/profil', function () {
+//         return view('dosen.v_profil');
+//     })->name('profil');
+//     Route::get('/data_pengampu', function () {
+//         return view('dosen.v_ampu');
+//     })->name('ampu');
+//     // Route::resource('profil', DosenController::class);
 // });
 
-Route::group(['prefix' => '/dosen'], function () {
-    Route::get('/', [DosenController::class, 'index'])->name('dosen.index');
-    // Route::get('/create', [ProdukController::class, 'create'])->name('create.produk');
-    // Route::get('/show', [ProdukController::class, 'show'])->name('show.produk');
-    // Route::get('/edit', [ProdukController::class, 'edit'])->name('edit.produk');
-});
-
-Route::group(['prefix' => '/produk'], function () {
-    Route::get('/', [ProdukController::class, 'index'])->name('produk.index');
-    Route::get('/create', [ProdukController::class, 'create'])->name('create.produk');
-    Route::get('/show', [ProdukController::class, 'show'])->name('show.produk');
-    Route::get('/edit', [ProdukController::class, 'edit'])->name('edit.produk');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+// Route::prefix('dosen')->group(function () {
+//     Route::get('profil', [DosenController::class, 'profil']);
+//     Route::get('data_pengampu', [DosenController::class, 'data_pengampu']);
+// });
 
 // Route::prefix('mahasiswa')->group(function () {
 //     Route::get('pendaftaran', function () {

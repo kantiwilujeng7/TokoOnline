@@ -2,32 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\tb_dosen;
 use Illuminate\Http\Request;
 
 class DosenController extends Controller
 {
-    public function index()
-    {
-        $data = array('title' => 'Dosen');
-        return view('dosen.index', $data);
-    }
-    // public function create()
+    // public function index()
     // {
-    //     $data = array('title' => 'Form Produk Baru');
-    //     return view('produk.create', $data);
+    //     $temp['profil'] = DosenModel::getIDBy('tb_dosen');
+
+    //     return view('dosen.v_profil', $temp);
     // }
-    // public function store(Request $request)
+    // public function profil()
     // {
-    //     //
+    //     $data1 = tb_dosen::get();
+    //     $data = [
+    //         'data' => $data1
+    //     ];
+    //     return view('dosen.v_profil', $data);
     // }
-    // public function show()
+    // public function data_pengampu()
     // {
-    //     $data = array('tittle' => 'Foto Produk');
-    //     return view('produk.show', $data);
-    // }
-    // public function edit()
-    // {
-    //     $data = array('tittle' => 'Form Edit Produk');
-    //     return view('produk.edit', $data);
+    //     return view('dosen.v_ampu');
     // }
 }

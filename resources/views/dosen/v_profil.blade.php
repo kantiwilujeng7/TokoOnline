@@ -1,139 +1,47 @@
-@extends('layout.dashboard')
-@section('content')
-    <div class="container-fluid">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
         <div class="row">
-            <div class="col col-lg-4 col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Detail Foto Produk</h3>
-                        <div class="card-tools">
-                            <a href="{{ route('produk.index') }}" class="btn btn-sm btn-danger">
-                                Tutup
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <tr>
-                                    <td>Kode Produk</td>
-                                    <td>
-                                        PRO-12
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Nama Produk</td>
-                                    <td>
-                                        Baju Anak
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Qty</td>
-                                    <td>
-                                        12 pcs
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Harga</td>
-                                    <td>
-                                        Rp. 15.0000
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-12 text-center mt-4 mb-2">
+                <h2>Profil Dosen</h2>
             </div>
-            <div class="col col-lg-8 col-md-8">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Foto Produk</h3>
-                    </div>
-                    <div class="card-body">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <input type="file" name="image" id="image">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary">Upload</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-3 mb-2">
-
-                                <img src="{{ asset('asset/slide1.jpg') }}" alt="image" class="img-
-thumbnail mb-2">
-
-                                <button class="btn-sm btn-danger btn">
-                                    Delete
-                                </button>
-                            </div>
-                            <div class="col-md-3 mb-2">
-
-                                <img src="{{ asset('asset/slide1.jpg') }}" alt="image" class="img-
-thumbnail mb-2">
-
-                                <button class="btn-sm btn-danger btn">
-                                    Delete
-                                </button>
-                            </div>
-                            <div class="col-md-3 mb-2">
-
-                                <img src="{{ asset('asset/slide1.jpg') }}" alt="image" class="img-
-thumbnail mb-2">
-
-                                <button class="btn-sm btn-danger btn">
-                                    Delete
-                                </button>
-                            </div>
-                            <div class="col-md-3 mb-2">
-
-                                <img src="{{ asset('asset/slide1.jpg') }}" alt="image" class="img-
-thumbnail mb-2">
-
-                                <button class="btn-sm btn-danger btn">
-                                    Delete
-                                </button>
-                            </div>
-                            <div class="col-md-3 mb-2">
-
-                                <img src="{{ asset('asset/slide1.jpg') }}" alt="image" class="img-
-thumbnail mb-2">
-
-                                <button class="btn-sm btn-danger btn">
-                                    Delete
-                                </button>
-                            </div>
-                            <div class="col-md-3 mb-2">
-
-                                <img src="{{ asset('asset/slide1.jpg') }}" alt="image" class="img-
-thumbnail mb-2">
-
-                                <button class="btn-sm btn-danger btn">
-                                    Delete
-                                </button>
-                            </div>
-                            <div class="col-md-3 mb-2">
-
-                                <img src="{{ asset('asset/slide1.jpg') }}" alt="image" class="img-
-thumbnail mb-2">
-
-                                <button class="btn-sm btn-danger btn">
-                                    Delete
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">NIP</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Foto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($data as $v)
+                            <tr>
+                                <td>{{ $v->nip }}</td>
+                                <td>{{ $v->nama_dosen }}</td>
+                                <td>{{ $v->foto_dosen }}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-@endsection
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+</script>
